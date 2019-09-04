@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Yuxi Map #1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""
+    ></script>
+    <script src="map_layers/yuxilakes.geojson"></script>
+    <script src="map_layers/yunnan.geojson"></script>
+    <script src="map_layers/ninelakes.geojson"></script>
+    <script src="map_layers/basins.geojson"></script>
+    <script src="map_layers/erie.geojson"></script>
+    <script src="zoom_levels.js"></script>
+    <script src="https://kit.fontawesome.com/79a0970f26.js"></script>
+  </head>
+
+  <body>
+    <div id="divmap">
+      <div id="mainmap">
+          <button class="btn-style" id="btn-next" onclick="nextZoom(n)">&#8250;</button>
+          <button class="btn-style" id="btn-previous" onclick="previousZoom(n)">&#8249;</button>
+    </div>
+    
+    <script src="map.js"></script>
+
+    <!-- <button onclick="nextMarker(currentMarker)">Next</button> -->
+  </body>
+</html>

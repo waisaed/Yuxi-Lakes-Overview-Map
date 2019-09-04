@@ -1,0 +1,60 @@
+body {
+  background-color: #35536f;
+}
+#mainmap {
+  height: 700px;
+  width: 90%;
+  margin: 2rem auto;
+  /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75); */
+}
+
+/* .leaflet-popup-content {
+} */
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-width: 400px;
+}
+.info h2 {
+  margin: 0 0 5px;
+  color: rgb(27, 27, 27);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.info-inner {
+  padding: 6px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn-style {
+  pointer-events: auto;
+  z-index: 9999;
+  font-size: 40px;
+  border-radius: 5px;
+  padding: 32px 16px;
+  border: solid 1px grey;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+}
+button:hover {
+  background: rgba(235, 233, 233, 0.9);
+}
+
+#btn-next {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+}
+
+#btn-previous {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+}
