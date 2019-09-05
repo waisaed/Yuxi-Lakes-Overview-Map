@@ -87,9 +87,9 @@ info.onAdd = function(map) {
 info.update = function(n) {
   this._div.innerHTML = `<div class="info-inner"><h2>${
     zoomLevel["zoomStatus"][n]["subtitle"]
-  } (${n + 1}/${zoomLevel["zoomStatus"].length})</h2><p>${
+  } (${n + 1}/${zoomLevel["zoomStatus"].length})</h2>${
     zoomLevel["zoomStatus"][n]["text"]
-  }</p></div>`;
+  }</div>`;
 };
 info.addTo(map);
 
@@ -129,12 +129,15 @@ function updateMap(z) {
   });
   map.addLayer(eval(zoomLevel["zoomStatus"][z]["tiles"]));
 
-  if (zoomLevel["zoomStatus"][z]["secondLayer"] != undefined) {
+  /*   if (zoomLevel["zoomStatus"][z]["secondLayer"] != undefined) {
     map.addLayer(eval(zoomLevel["zoomStatus"][z]["secondLayer"]));
-  }
-  if (zoomLevel["zoomStatus"][z]["layer"] != "") {
-    map.addLayer(eval(zoomLevel["zoomStatus"][z]["layer"]));
-    eval(zoomLevel["zoomStatus"][z]["layer"]).bringToFront();
+  } */
+  console.log(zoomLevel["zoomStatus"][z]["layer"].length);
+  for (i = 0; i < zoomLevel["zoomStatus"][z]["layer"].length; i++) {
+    if (zoomLevel["zoomStatus"][z]["layer"][i] != undefined) {
+      map.addLayer(eval(zoomLevel["zoomStatus"][z]["layer"][i])); //change to "for" loop to iterate through array
+      /*  eval(zoomLevel["zoomStatus"][z]["layer"]).bringToFront(); */
+    }
   }
 }
 //geoJson layers
@@ -158,7 +161,8 @@ subBasins = L.geoJson(basinsOutline, {
 });
 
 lakeErie = L.geoJson(erieOutline, {
-  style: polyStyle3()
+  style: polyStyle3(),
+  onEachFeature: onEachFeature
 });
 
 //layers control

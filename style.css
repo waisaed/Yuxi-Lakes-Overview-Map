@@ -1,6 +1,11 @@
 body {
   background-color: #35536f;
 }
+sup {
+  vertical-align: top;
+  font-size: 0.6em;
+}
+
 #mainmap {
   height: 700px;
   width: 90%;
