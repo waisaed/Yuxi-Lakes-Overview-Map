@@ -26,7 +26,7 @@ const zoomLevel = {
     {
       subtitle: "Three Yuxi Lakes",
       text:
-        "<p>Three lakes surrounding Yuxi city are known for their beauty.</p><p><em>(Click the lakes to learn more about them)</em></p>",
+        "<p>The Yuxi District government is responsible for the restoration and protection of three lakes surrounding Yuxi City.</p><p><em>(Click the lakes to learn more about them)</em></p>",
       layer: ["yuxiLakes"], //
       zoom: 10,
       lat: 24.423742,
