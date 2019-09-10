@@ -12,9 +12,9 @@ const zoomLevel = {
       polyColor: "red"
     },
     {
-      subtitle: "The Nine Plateau Lakes Region",
+      subtitle: "Yunnan's Plateau Region",
       text:
-        '<p>Yunnan\'s Plateau Region has 1,066 km<sup>2</sup> total lake surface area. </ br>Nine of these "plateau" lakes are recognized as having surface areas over 30 km<sup>2</sup>.</p><p><em>(Drainage sub-basins are shown in red)</em>',
+        '<p>The region is home to many lakes, comprising a total surface area of 1,066 km<sup>2</sup>. </ br>Nine of these "plateau" lakes are recognized as having surface areas over 30 km<sup>2</sup>.</p><p><em>(Drainage sub-basins are shown in red)</em>',
       layer: ["subBasins", "nineLakes"],
       secondLayer: "subBasins",
       zoom: 7,
@@ -26,7 +26,7 @@ const zoomLevel = {
     {
       subtitle: "Three Yuxi Lakes",
       text:
-        "<p>The Yuxi District government is responsible for the restoration and protection of three lakes surrounding Yuxi City.</p><p><em>(Click the lakes to learn more about them)</em></p>",
+        "<p>The Yuxi City government is responsible for the restoration and protection of three nearby lakes.</p><p><em>(Click the lakes to learn more about them)</em></p>",
       layer: ["yuxiLakes"], //
       zoom: 10,
       lat: 24.423742,
@@ -35,9 +35,9 @@ const zoomLevel = {
       polyColor: "#3388ff"
     },
     {
-      subtitle: "Comparing lakes of the Yuxi District with Lake Erie",
+      subtitle: "Comparing lakes of the Yuxi with Lake Erie",
       text:
-        "<p>Lake Erie (superimposed here below the Yuxi District lakes) faces similar threats to water quality despite it's larger volume and surface area.</p><p><em>(Click the lakes to learn more about them)</em></p>",
+        "<p>Lake Erie (superimposed here below the Yuxi area lakes) faces similar threats to water quality despite it's larger volume and surface area.</p><p><em>(Click the lakes to learn more about them)</em></p>",
       layer: ["yuxiLakes", "lakeErie"],
       secondLayer: "lakeErie",
       zoom: 8,
