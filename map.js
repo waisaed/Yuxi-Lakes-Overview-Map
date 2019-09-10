@@ -153,8 +153,7 @@ yuxiLakes = L.geoJson(lakeLayer, {
 });
 
 subBasins = L.geoJson(basinsOutline, {
-  style: basinStyle(),
-  onEachFeature: onEachFeature
+  style: basinStyle()
 });
 
 lakeErie = L.geoJson(erieOutline, {
