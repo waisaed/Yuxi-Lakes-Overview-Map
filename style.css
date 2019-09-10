@@ -72,3 +72,6 @@ button:hover {
     margin: auto;
   }
 }
+.leaflet-popup-content {
+  font-size: 0.85rem;
+}
