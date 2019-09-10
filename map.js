@@ -17,8 +17,8 @@ function polyStyle1() {
 
 function polyStyle2() {
   return {
-    weight: 3,
-    opacity: 0.65,
+    weight: 2,
+    opacity: 1,
     fillOpacity: 0,
     color: "rgb(51, 136, 255)"
   };
@@ -37,8 +37,8 @@ function polyStyle3() {
 function basinStyle() {
   return {
     weight: 1,
-    opacity: 0.65,
-    color: "grey",
+    opacity: 1,
+    color: "#3f3f3f",
     fillColor: "red",
     fillOpacity: 0.1
   };
@@ -153,7 +153,8 @@ yuxiLakes = L.geoJson(lakeLayer, {
 });
 
 subBasins = L.geoJson(basinsOutline, {
-  style: basinStyle()
+  style: basinStyle(),
+  onEachFeature: onEachFeature
 });
 
 lakeErie = L.geoJson(erieOutline, {
