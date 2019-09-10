@@ -129,10 +129,6 @@ function updateMap(z) {
   });
   map.addLayer(eval(zoomLevel["zoomStatus"][z]["tiles"]));
 
-  /*   if (zoomLevel["zoomStatus"][z]["secondLayer"] != undefined) {
-    map.addLayer(eval(zoomLevel["zoomStatus"][z]["secondLayer"]));
-  } */
-  console.log(zoomLevel["zoomStatus"][z]["layer"].length);
   for (i = 0; i < zoomLevel["zoomStatus"][z]["layer"].length; i++) {
     if (zoomLevel["zoomStatus"][z]["layer"][i] != undefined) {
       map.addLayer(eval(zoomLevel["zoomStatus"][z]["layer"][i])); //change to "for" loop to iterate through array
