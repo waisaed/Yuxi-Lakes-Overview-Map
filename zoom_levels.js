@@ -36,7 +36,7 @@ const zoomLevel = {
     {
       subtitle: "Three Yuxi Lakes",
       text:
-        "<p>Of these three lakes, Fuxian is substantially larger and deeper than Qilu and Xingyun.<p class='directions'><em>&#128269; Click the lakes to learn more about them</em></p>",
+        "<p>Of these three lakes, Fuxian is substantially larger and deeper than Qilu or Xingyun.<p class='directions'><em>&#128269; Click the lakes to learn more about them</em></p>",
       layer: ["yuxiLakes"], //
       zoom: 10,
       lat: 24.423742,
