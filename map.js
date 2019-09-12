@@ -9,7 +9,7 @@ function polyStyle1() {
   return {
     weight: 2,
     opacity: 0.65,
-    fillOpacity: 0.5,
+    fillOpacity: 0.2,
     fillColor: "grey",
     color: "red"
   };
@@ -41,6 +41,16 @@ function basinStyle() {
     color: "#3f3f3f",
     fillColor: "red",
     fillOpacity: 0.1
+  };
+}
+
+function districtStyle() {
+  return {
+    weight: 2,
+    opacity: 1,
+    color: "green",
+    fillColor: "green",
+    fillOpacity: 0.2
   };
 }
 
@@ -138,8 +148,11 @@ function updateMap(z) {
 }
 //geoJson layers
 yunnanOutline = L.geoJson(yunnanLayer, {
-  style: polyStyle1(),
-  onEachFeature: onEachFeature
+  style: polyStyle1()
+});
+
+yuxiOutline = L.geoJson(yuxiDistrict, {
+  style: districtStyle()
 });
 
 nineLakes = L.geoJson(nineLayer, {

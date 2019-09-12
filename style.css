@@ -17,6 +17,15 @@ sup {
   width: 100%;
 }
 
+.legend {
+  font-style: italic;
+}
+
+.directions {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
 .info {
   padding: 6px 8px;
   font: 14px/16px Arial, Helvetica, sans-serif;
