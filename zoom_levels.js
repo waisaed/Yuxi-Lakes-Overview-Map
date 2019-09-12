@@ -14,7 +14,7 @@ const zoomLevel = {
     {
       subtitle: "Yunnan's Plateau Region",
       text:
-        '<p>The region is home to many lakes, comprising a total surface area of 1,066 km<sup>2</sup>. </ br>Nine of these "plateau" lakes are recognized as having surface areas over 30 km<sup>2</sup>. The lakes span multiple watersheds.</p><p class="legend">(Watersheds are shown in red. Lakes are outlined in blue.)</p>',
+        '<p>The region is home to many lakes, comprising a total surface area of 1,066 km<sup>2</sup>. </ br>Nine of these "plateau" lakes are recognized as having surface areas over 30 km<sup>2</sup>. The lakes span multiple watersheds.</p><p class="legend">(Watersheds are shown in red, Lakes are outlined in blue.)</p>',
       layer: ["subBasins", "nineLakes"],
       zoom: 7,
       lat: 26.199619,
@@ -36,7 +36,7 @@ const zoomLevel = {
     {
       subtitle: "Three Yuxi Lakes",
       text:
-        "<p>Of these three lakes, Fuxian is substantially larger and deeper than Qilu or Xingyun.<p class='directions'><em>&#128269; Click the lakes to learn more about them</em></p>",
+        "<p>Of these three lakes, Fuxian is substantially larger and deeper than Qilu or Xingyun.<p class='directions'>&#128269; Click the lakes to learn more about them</p>",
       layer: ["yuxiLakes"], //
       zoom: 10,
       lat: 24.423742,
@@ -47,7 +47,7 @@ const zoomLevel = {
     {
       subtitle: "Comparing lakes of the Yuxi with Lake Erie",
       text:
-        "<p>Lake Erie (superimposed here below the Yuxi area lakes) faces similar threats to water quality despite it's larger volume and surface area.</p><p><em>(Click the lakes to learn more about them)</em></p>",
+        "<p>Lake Erie (superimposed here below the Yuxi area lakes) faces similar threats to water quality despite it's larger volume and surface area.</p><p class='directions'>&#128269; Click the lakes to learn more about them</p>",
       layer: ["yuxiLakes", "lakeErie"],
       zoom: 8,
       lat: 23.609959,
