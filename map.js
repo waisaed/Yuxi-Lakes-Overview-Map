@@ -46,7 +46,7 @@ function basinStyle() {
 
 function districtStyle() {
   return {
-    weight: 2,
+    weight: 1,
     opacity: 1,
     color: "green",
     fillColor: "green",
