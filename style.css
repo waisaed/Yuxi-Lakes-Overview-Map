@@ -44,10 +44,6 @@ sup {
   padding: 6px;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .btn-style {
   pointer-events: auto;
   z-index: 9999;
@@ -83,4 +79,14 @@ button:hover {
 }
 .leaflet-popup-content {
   font-size: 0.85rem;
+}
+
+.citation {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 2rem;
+}
+
+ul.citation {
+  list-style-type: circle;
 }
