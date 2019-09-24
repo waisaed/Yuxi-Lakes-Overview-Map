@@ -25,7 +25,7 @@ const zoomLevel = {
     {
       subtitle: "The Yuxi District",
       text:
-        '<p>Three of these "plateau lakes" fall entirely within the Yuxi District of Yunnan. The Yuxi District is responsible for the restoration and protection of these lakes.</p><p class="legend">(Yuxi District is outlined in green)</p>',
+        '<p>Three of these "plateau lakes" fall entirely within the Yuxi District of Yunnan. The Yuxi District government is responsible for the restoration and protection of these lakes.</p><p class="legend">(Yuxi District is outlined in green)</p>',
       layer: ["yuxiOutline", "nineLakes"],
       zoom: 8,
       lat: 24.423742,
@@ -47,7 +47,7 @@ const zoomLevel = {
     {
       subtitle: "Comparing lakes of the Yuxi with Lake Erie",
       text:
-        "<p>Lake Erie (superimposed here below the Yuxi area lakes) faces similar threats to water quality despite it's larger volume and surface area.</p><p class='directions'>&#128269; Click the lakes to learn more about them</p>",
+        "<p>Lake Erie (superimposed here below the Yuxi area lakes) faces similar threats to water quality despite its larger volume and surface area.</p><p class='directions'>&#128269; Click the lakes to learn more about them</p>",
       layer: ["yuxiLakes", "lakeErie"],
       zoom: 8,
       lat: 23.609959,
