@@ -1,7 +1,7 @@
 const zoomLevel = {
   zoomStatus: [
     {
-      subtitle: "The Yunnan Provence of China",
+      subtitle: "The Yunnan Province of China",
       text:
         "<p>The Yunnan Province is a mountainous region in Southwestern China.</p><p class='legend'>(Yunnan is outlined in red)</p><p class='directions'>&#128269; Click the right-arrow button to see the next view</p>",
       layer: ["yunnanOutline"], //
@@ -14,7 +14,7 @@ const zoomLevel = {
     {
       subtitle: "Yunnan's Plateau Region",
       text:
-        '<p>The region is home to many lakes, comprising a total surface area of 1,066 km<sup>2</sup>. </ br>Nine of these "plateau" lakes are recognized as having surface areas over 30 km<sup>2</sup>. The lakes span multiple watersheds.</p><p class="legend">(Watersheds are shown in red, Lakes are outlined in blue.)</p>',
+        '<p>The region is home to many lakes, comprising a total surface area of 1,066 km<sup>2</sup>. </ br>Nine of these "plateau lakes" are recognized as having surface areas over 30 km<sup>2</sup>. The lakes span multiple watersheds.</p><p class="legend">(Watersheds are shaded red. Lakes are outlined in blue.)</p>',
       layer: ["subBasins", "nineLakes"],
       zoom: 7,
       lat: 26.199619,
@@ -23,9 +23,9 @@ const zoomLevel = {
       polyColor: "red"
     },
     {
-      subtitle: "The Yuxi District",
+      subtitle: "The Yuxi City District",
       text:
-        '<p>Three of these "plateau lakes" fall entirely within the Yuxi District of Yunnan. The Yuxi District government is responsible for the restoration and protection of these lakes.</p><p class="legend">(Yuxi District is outlined in green)</p>',
+        '<p>Three of these "plateau lakes" fall entirely within the Yuxi City District of Yunnan. The Yuxi City government is responsible for the restoration and protection of these lakes.</p><p class="legend">(Yuxi City District is outlined in green)</p>',
       layer: ["yuxiOutline", "nineLakes"],
       zoom: 8,
       lat: 24.423742,
