@@ -19,13 +19,15 @@
       integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
       crossorigin=""
     ></script>
+
     <script src="map_layers/yuxilakes.geojson"></script>
     <script src="map_layers/yunnan.geojson"></script>
     <script src="map_layers/ninelakes.geojson"></script>
     <script src="map_layers/basins.geojson"></script>
     <script src="map_layers/erie.geojson"></script>
     <script src="map_layers/yuxidistrict.geojson"></script>
-    <script src="zoom_levels.js"></script>
+    <script src="poly_styles.js"></script>
+    <script src="map_views.js"></script>
   </head>
 
   <body>
@@ -65,14 +67,7 @@
       </ol>
     </div>
     <div id="divmap">
-      <div id="mainmap">
-        <button class="btn-style" id="btn-next" onclick="nextZoom(n)">
-          &#8250;
-        </button>
-        <button class="btn-style" id="btn-previous" onclick="previousZoom(n)">
-          &#8249;
-        </button>
-      </div>
+      <div id="mainmap"></div>
     </div>
 
     <div class="citation">
@@ -99,8 +94,8 @@
         </li>
       </ul>
     </div>
+    <script src="listeners.js"></script>
     <script src="map.js"></script>
-
-    <!-- <button onclick="nextMarker(currentMarker)">Next</button> -->
+    <script src="map_elements/navigation.js"></script>
   </body>
 </html>
