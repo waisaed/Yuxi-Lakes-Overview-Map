@@ -45,7 +45,7 @@ const mapViewList = {
       polyColor: "#3388ff"
     },
     {
-      subtitle: "Comparing lakes of the Yuxi with Lake Erie",
+      subtitle: "Comparing the Yuxi lakes with Lake Erie",
       text:
         "<p>Lake Erie in the United States (superimposed here below the Yuxi area lakes) faces similar threats to water quality despite its larger volume and surface area.</p><p class='directions'>&#128269; Click the lakes to learn more about them</p>",
       layers: ["yuxiLakes", "lakeErie"],
